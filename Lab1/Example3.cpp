@@ -1,23 +1,41 @@
-#include <iostream.h>
-#include <conio.h>
-void main(void)
+#include <iostream>
+using namespace std;
+
+int main(void)
 {
-  int mas[] = {2, 5, -8, 1, -4, 6, 3, -5, -9, 13, 0, 4, 9};
-  // текущие индексы мин. и макс. элементов
-  int n = sizeof(mas) / sizeof(int);
-  int i;
-  // установка начальных индексов для мин и макс
-  imin = i = 0;
-  imax = i = 0;
-  for (int i = 0; i < n; i++)
-    cout << mas[i] << ' ';
-  cout << endl;
-  for (i = 0; i < n; i++)
-  {
-    imin = i;
-    for (int j = i + 1; j < n; j++)
-      if (mas[j] < mas[imin])
-        = j;
-    int
-  }
+  int a = 2, b = 5;
+  void obmen1(int, int);
+  void obmen2(int *, int *);
+  void obmen3(int &, int &);
+  cout << "до обмена: a= " << a << "b=" << endl;
+  // вызов obmen1(int, int);
+  cout << "после обмена 1: a= " << a << "b=" << b << endl;
+  // вызов obmen2(int*, int*);
+  cout << "после обмена 2: a= " << a << "b=" << b << endl;
+  obmen3(a, b);
+  // вызов obmen3(int&, int&);
+  cout << "после обмена 3:  a=" << a << "b=" << b << endl;
+}
+void obmen1(int x, int y)
+{
+  int tmp;
+  tmp = x;
+  x = y;
+  y = tmp;
+}
+
+void obmen2(int *x, int *y)
+{
+  int tmp;
+  tmp = *x;
+  *x = *y;
+  *y = tmp;
+}
+
+void obmen3(int &x, int &y)
+{
+  int tmp;
+  tmp = x;
+  x = y;
+  y = tmp;
 }
