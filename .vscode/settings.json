@@ -42,6 +42,7 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "example1": "cpp",
-        "example1,cpp": "cpp"
+        "example1,cpp": "cpp",
+        "ctime": "cpp"
     }
 }
