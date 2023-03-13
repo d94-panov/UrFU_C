@@ -29,7 +29,7 @@ int main() {
     }
 
     if (!output.is_open()) {
-        std::cerr << "Failed to open output file" << std::endl; // // ошибка если не удалось открыть выходной файл
+        std::cerr << "Failed to open output file" << std::endl; // ошибка если не удалось открыть выходной файл
         return 1;
     }
 

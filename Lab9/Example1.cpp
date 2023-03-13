@@ -14,7 +14,7 @@ public:
         cents = c;
     }
     int operator>(const Money&) const;
-    friend ostream& operator << (ostream&, Money&); // const?
+    friend ostream& operator << (ostream&, Money&);
 };
 
 int Money::operator>(const Money& amt) const
